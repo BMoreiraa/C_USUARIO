@@ -1,0 +1,9 @@
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\DAL\bin\Debug\DAL.dll
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\DAL\bin\Debug\DAL.pdb
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\DAL\bin\Debug\MODEL.dll
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\DAL\bin\Debug\MODEL.pdb
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\DAL\obj\Debug\DAL.dll
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\DAL\obj\Debug\DAL.pdb
