@@ -1,0 +1,6 @@
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\MODEL\bin\Debug\MODEL.dll
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\MODEL\bin\Debug\MODEL.pdb
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\MODEL\obj\Debug\MODEL.csproj.AssemblyReference.cache
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\MODEL\obj\Debug\MODEL.csproj.CoreCompileInputs.cache
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\MODEL\obj\Debug\MODEL.dll
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\MODEL\obj\Debug\MODEL.pdb

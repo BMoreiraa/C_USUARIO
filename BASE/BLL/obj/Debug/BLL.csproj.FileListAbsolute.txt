@@ -1,0 +1,9 @@
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\bin\Debug\BLL.dll
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\bin\Debug\BLL.pdb
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\bin\Debug\MODEL.dll
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\bin\Debug\MODEL.pdb
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.dll
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.pdb

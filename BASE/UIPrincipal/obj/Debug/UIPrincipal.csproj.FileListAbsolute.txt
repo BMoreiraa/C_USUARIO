@@ -1,0 +1,9 @@
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\bin\Debug\UIPrincipal.exe.config
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\bin\Debug\UIPrincipal.exe
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\bin\Debug\UIPrincipal.pdb
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.csproj.AssemblyReference.cache
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.Properties.Resources.resources
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.csproj.GenerateResource.cache
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.csproj.CoreCompileInputs.cache
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.exe
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.pdb
