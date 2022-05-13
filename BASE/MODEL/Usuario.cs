@@ -6,8 +6,8 @@ namespace MODEL
     {
         private String nome;
         private int id;
-        private int senha;
-        private int ativo;
+        private string senha;
+        private bool ativo;
 
         public string Nome
         {
@@ -22,12 +22,12 @@ namespace MODEL
             get { return id; }
             set { id = value; }
         }//id
-        public int Senha
+        public String Senha
         {
             get { return senha; }
             set { senha = value; }
         }//SENHA
-        public int Ativo
+        public bool Ativo
         {
             get { return ativo; }
             set { ativo = value; }

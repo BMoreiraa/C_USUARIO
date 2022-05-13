@@ -7,3 +7,5 @@ C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.csproj.CoreCom
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.dll
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.pdb
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\bin\Debug\DAL.dll
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\bin\Debug\DAL.pdb

@@ -7,3 +7,11 @@ C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipa
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.csproj.CoreCompileInputs.cache
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.exe
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.pdb
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\bin\Debug\BLL.dll
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\bin\Debug\MODEL.dll
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\bin\Debug\DAL.dll
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\bin\Debug\BLL.pdb
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\bin\Debug\MODEL.pdb
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\bin\Debug\DAL.pdb
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.Form1.resources
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.csproj.CopyComplete

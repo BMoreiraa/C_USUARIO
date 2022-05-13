@@ -12,11 +12,11 @@ namespace DAL
             SqlConnection cn = new SqlConnection();
             try
             {
-                cn.ConnectionString = "";
+                cn.ConnectionString = @"User ID=SA;Initial Catalog=LOJA;Data Source=.\SQLEXPRESS2019;Password=Senailab05";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_IserirUsuario";
+                cmd.CommandText = "SP_InserirUsuario";
 
                 //-------------------------------------
                 SqlParameter pativo = new SqlParameter("@Ativo", SqlDbType.Bit)
@@ -26,8 +26,8 @@ namespace DAL
                 cmd.Parameters.Add(pativo);
                 //modo alternativo-----------------------
 
-                SqlParameter pNome = new SqlParameter("@Nome", SqlDbType.VarChar);
-                pNome.Value = _usuario.Senha;
+                SqlParameter pNome = new SqlParameter("@NomeUsuario", SqlDbType.VarChar);
+                pNome.Value = _usuario.Nome;
                 cmd.Parameters.Add(pNome);
 
                 SqlParameter psenha = new SqlParameter("@senha", SqlDbType.VarChar);
