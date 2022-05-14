@@ -56,7 +56,6 @@ namespace DAL
                 cn.Close();
             }
         }
-
     }//Usuario_DAL
 
 }//DAL
