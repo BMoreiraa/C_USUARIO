@@ -15,3 +15,5 @@ C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\bin\Debug\MODEL.pdb
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\bin\Debug\DAL.pdb
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.csproj.CopyComplete
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.FormCadastroUsuario.resources
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.FormPrincipal.resources
+C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.FormconsultaUsuário.resources
