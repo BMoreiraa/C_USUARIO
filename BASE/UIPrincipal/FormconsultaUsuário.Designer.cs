@@ -170,7 +170,7 @@ namespace UIPrincipal
             this.usuarioDataGridView.Name = "usuarioDataGridView";
             this.usuarioDataGridView.Size = new System.Drawing.Size(776, 402);
             this.usuarioDataGridView.TabIndex = 5;
-            this.usuarioDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.usuarioDataGridView_CellContentClick);
+            
             // 
             // dataGridViewTextBoxColumn1
             // 

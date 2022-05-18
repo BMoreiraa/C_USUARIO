@@ -8,11 +8,11 @@ namespace UIPrincipal
         public FormconsultaUsuário()
         {
             InitializeComponent();
-        }
+        }//---------
 
-        private void usuarioDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void buttonSair_Click_1(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void buttonNovo_Click(object sender, EventArgs e)
@@ -31,9 +31,5 @@ namespace UIPrincipal
             }
         }
 
-        private void buttonSair_Click_1(object sender, EventArgs e)
-        {
-            Close();
-        }
     }
 }
