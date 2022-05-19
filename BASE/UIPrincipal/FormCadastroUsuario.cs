@@ -58,7 +58,13 @@ namespace UIPrincipal
             nomeTextBox.Focus();
         }
 
-
+        private void FormCadastroUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                Close();
+            }
+        }
     }
 }//UIPRINCIPAL 
  //LOCAL PARA ORGANIZAR AS FUNÇÕES DOS BOTÕES

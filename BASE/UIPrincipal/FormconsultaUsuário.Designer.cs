@@ -170,7 +170,6 @@ namespace UIPrincipal
             this.usuarioDataGridView.Name = "usuarioDataGridView";
             this.usuarioDataGridView.Size = new System.Drawing.Size(776, 402);
             this.usuarioDataGridView.TabIndex = 5;
-            
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -208,10 +207,10 @@ namespace UIPrincipal
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.KeyPreview = true;
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(824, 654);
             this.Name = "FormconsultaUsuário";
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Usuário";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormconsultaUsuário_KeyDown);
