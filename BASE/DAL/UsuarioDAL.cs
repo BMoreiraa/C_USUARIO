@@ -27,7 +27,7 @@ namespace DAL
                 //modo alternativo-----------------------
 
                 SqlParameter pNome = new SqlParameter("@NomeUsuario", SqlDbType.VarChar);
-                pNome.Value = _usuario.Nome;
+                pNome.Value = _usuario.NomeUsuario;
                 cmd.Parameters.Add(pNome);
 
                 SqlParameter psenha = new SqlParameter("@senha", SqlDbType.VarChar);
@@ -56,7 +56,7 @@ namespace DAL
                 cn.Close();
             }
 
-        }
+        }//inserir
 
         public DataTable Buscar(string _filtro)
         {
@@ -74,6 +74,9 @@ namespace DAL
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
                 SqlParameter pfiltro = new SqlParameter("@filtro",SqlDbType.VarChar);
                 pfiltro.Value = _filtro;
+                da.SelectCommand.Parameters.Add(pfiltro);
+
+                cn.Open();
                 da.Fill(dt);
                 return dt;
             }
@@ -94,6 +97,54 @@ namespace DAL
 
         }//USUÁRIO
 
+        public Usuario Alterar(Usuario _usuario)
+        {
+            SqlConnection cn = new SqlConnection();
+            
+            try
+            {
+                cn.ConnectionString = @"User ID=SA;Initial Catalog=LOJA;Data Source=.\SQLEXPRESS2019;Password=Senailab05";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "SP_AlterarUsuario";
+
+                SqlParameter pid = new SqlParameter("@ID",SqlDbType.Int);
+                pid.Value = _usuario.Id;
+                cmd.Parameters.Add(pid);
+
+                SqlParameter pNome = new SqlParameter("@NomeUsuario", SqlDbType.VarChar);
+                pNome.Value = _usuario.NomeUsuario;
+                cmd.Parameters.Add(pNome);
+
+                SqlParameter psenha = new SqlParameter("@senha", SqlDbType.VarChar);
+                psenha.Value = _usuario.Senha;
+                cmd.Parameters.Add(psenha);
+
+                SqlParameter pativo = new SqlParameter("@Ativo", SqlDbType.Bit);
+                pativo.Value = _usuario.Ativo;
+                cmd.Parameters.Add(pativo);
+
+
+                return _usuario;
+
+            }
+            catch (SqlException ex)
+            {
+
+                throw new Exception("Servidor SQL Erro: " + ex.Message);
+            }
+            catch (Exception ex )
+            {
+
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                cn.Close(); 
+            }
+        }//alterar
+
         public void Excluir(int _ID)
         {
             SqlConnection cn = new SqlConnection();
@@ -104,7 +155,8 @@ namespace DAL
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "SP_ExcluirUsuario";
-                SqlParameter pid = new SqlParameter();
+
+                SqlParameter pid = new SqlParameter("@ID",SqlDbType.Int);
                 pid.Value = _ID;
                 cmd.Parameters.Add(pid);
 
@@ -130,37 +182,6 @@ namespace DAL
             }
         }// EXCLUIR
 
-        public Usuario Alterar(Usuario _usuario)
-        {
-            SqlConnection cn = new SqlConnection();
-            
-            try
-            {
-                cn.ConnectionString = @"User ID=SA;Initial Catalog=LOJA;Data Source=.\SQLEXPRESS2019;Password=Senailab05";
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = cn;
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_AlterarUsuario";
-                //SqlParameter pUs = new SqlParameter();
-
-                return _usuario;
-
-            }
-            catch (SqlException ex)
-            {
-
-                throw new Exception("Servidor SQL Erro: " + ex.Message);
-            }
-            catch (Exception ex )
-            {
-
-                throw new Exception(ex.Message);
-            }
-            finally
-            {
-                cn.Close(); 
-            }
-        }
     }//Usuario_DAL
 
 }//DAL

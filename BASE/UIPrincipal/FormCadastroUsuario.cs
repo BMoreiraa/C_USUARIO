@@ -11,14 +11,14 @@ namespace UIPrincipal
         {
             InitializeComponent();
             usuarioBindingSource.AddNew();
-            
         }
+
         private void inserir()
         {
             UsuarioBLL usuarioBLL = new UsuarioBLL();
             Usuario usuario = new Usuario();
             usuario.Id = Convert.ToInt32(idTextBox.Text);
-            usuario.Nome = nomeTextBox.Text;
+            usuario.NomeUsuario = nomeTextBox.Text;
             usuario.Senha = senhaTextBox.Text;
             usuario.Ativo = ativoCheckBox.Checked;
             usuarioBLL.Inserir(usuario);
@@ -47,8 +47,6 @@ namespace UIPrincipal
 
         }//BOTÃO DE SAI 
 
-        
-
         private void buttonCadastraNovo_Click_1(object sender, EventArgs e)
         {
             usuarioBindingSource.EndEdit();
@@ -65,6 +63,8 @@ namespace UIPrincipal
                 Close();
             }
         }
+
+
     }
 }//UIPRINCIPAL 
  //LOCAL PARA ORGANIZAR AS FUNÇÕES DOS BOTÕES

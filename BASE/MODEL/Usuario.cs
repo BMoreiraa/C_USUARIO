@@ -4,18 +4,16 @@ namespace MODEL
 {
     public class Usuario
     {
-        private String nome;
+        private String nomeUsuario;
         private int id;
         private string senha;
         private bool ativo;
 
-        public string Nome
+        public string NomeUsuario
         {
-            get { return nome; }
-            set
-            {
-                nome = value;
-            }
+            get { return nomeUsuario; }
+            set{nomeUsuario = value; }
+            
         }//nome
         public int Id
         {
