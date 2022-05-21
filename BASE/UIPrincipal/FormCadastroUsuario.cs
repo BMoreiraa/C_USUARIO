@@ -11,17 +11,32 @@ namespace UIPrincipal
         {
             InitializeComponent();
             usuarioBindingSource.AddNew();
+            inserindoNovo = true;
+        }
+
+        private bool inserindoNovo;
+
+        public FormCadastroUsuario(object _current)
+        {
+            InitializeComponent();
+            usuarioBindingSource.DataSource = _current;
+            inserindoNovo = false;
         }
 
         private void inserir()
         {
             UsuarioBLL usuarioBLL = new UsuarioBLL();
             Usuario usuario = new Usuario();
+
             usuario.Id = Convert.ToInt32(idTextBox.Text);
             usuario.NomeUsuario = nomeTextBox.Text;
             usuario.Senha = senhaTextBox.Text;
             usuario.Ativo = ativoCheckBox.Checked;
-            usuarioBLL.Inserir(usuario);
+
+            if (inserindoNovo )        
+                usuarioBLL.Inserir(usuario);
+            else
+                usuarioBLL.Alterar(usuario);
 
         }// GERADO AO CRIAR inserir();  
 
@@ -31,7 +46,10 @@ namespace UIPrincipal
             {
                 usuarioBindingSource.EndEdit();
                 inserir();
-                MessageBox.Show("Cadastro realizado com sucesso!");
+                if (inserindoNovo)          
+                    MessageBox.Show("Cadastro realizado com sucesso!");
+                else
+                    MessageBox.Show("alteração feita com sucesso!");
                 Close();
             }
             catch (Exception ex)
@@ -52,7 +70,9 @@ namespace UIPrincipal
             usuarioBindingSource.EndEdit();
             inserir();
             MessageBox.Show("Cadastro realizado com sucesso!");
+            usuarioBindingSource.DataSource = typeof(Usuario);
             usuarioBindingSource.AddNew();
+            inserindoNovo = true;
             nomeTextBox.Focus();
         }
 

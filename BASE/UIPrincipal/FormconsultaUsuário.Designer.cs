@@ -83,7 +83,7 @@ namespace UIPrincipal
             this.panel2.Location = new System.Drawing.Point(0, 568);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(808, 66);
-            this.panel2.TabIndex = 1;
+            this.panel2.TabIndex = 2;
             // 
             // buttonSair
             // 
@@ -92,7 +92,7 @@ namespace UIPrincipal
             this.buttonSair.Location = new System.Drawing.Point(715, 22);
             this.buttonSair.Name = "buttonSair";
             this.buttonSair.Size = new System.Drawing.Size(73, 32);
-            this.buttonSair.TabIndex = 5;
+            this.buttonSair.TabIndex = 3;
             this.buttonSair.Text = "&Sair";
             this.buttonSair.UseVisualStyleBackColor = false;
             this.buttonSair.Click += new System.EventHandler(this.buttonSair_Click_1);
@@ -104,7 +104,7 @@ namespace UIPrincipal
             this.buttonExcluir.Location = new System.Drawing.Point(208, 23);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(87, 32);
-            this.buttonExcluir.TabIndex = 4;
+            this.buttonExcluir.TabIndex = 2;
             this.buttonExcluir.Text = "E&xcluir";
             this.buttonExcluir.UseVisualStyleBackColor = false;
             this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
@@ -116,9 +116,10 @@ namespace UIPrincipal
             this.buttonAlterar.Location = new System.Drawing.Point(110, 23);
             this.buttonAlterar.Name = "buttonAlterar";
             this.buttonAlterar.Size = new System.Drawing.Size(87, 32);
-            this.buttonAlterar.TabIndex = 3;
+            this.buttonAlterar.TabIndex = 1;
             this.buttonAlterar.Text = "&Alterar";
             this.buttonAlterar.UseVisualStyleBackColor = false;
+            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // buttonNovo
             // 
@@ -128,7 +129,7 @@ namespace UIPrincipal
             this.buttonNovo.Location = new System.Drawing.Point(12, 22);
             this.buttonNovo.Name = "buttonNovo";
             this.buttonNovo.Size = new System.Drawing.Size(87, 32);
-            this.buttonNovo.TabIndex = 2;
+            this.buttonNovo.TabIndex = 0;
             this.buttonNovo.Text = "&Novo";
             this.buttonNovo.UseVisualStyleBackColor = false;
             this.buttonNovo.Click += new System.EventHandler(this.buttonNovo_Click);
@@ -141,7 +142,7 @@ namespace UIPrincipal
             this.textBoxBuscar.Location = new System.Drawing.Point(12, 112);
             this.textBoxBuscar.Name = "textBoxBuscar";
             this.textBoxBuscar.Size = new System.Drawing.Size(684, 20);
-            this.textBoxBuscar.TabIndex = 2;
+            this.textBoxBuscar.TabIndex = 0;
             this.textBoxBuscar.TextChanged += new System.EventHandler(this.textBoxBuscar_TextChanged);
             // 
             // buttonBuscar
@@ -151,7 +152,7 @@ namespace UIPrincipal
             this.buttonBuscar.Location = new System.Drawing.Point(715, 107);
             this.buttonBuscar.Name = "buttonBuscar";
             this.buttonBuscar.Size = new System.Drawing.Size(73, 29);
-            this.buttonBuscar.TabIndex = 3;
+            this.buttonBuscar.TabIndex = 1;
             this.buttonBuscar.Text = "&Buscar";
             this.buttonBuscar.UseVisualStyleBackColor = false;
             this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
@@ -163,6 +164,7 @@ namespace UIPrincipal
             | System.Windows.Forms.AnchorStyles.Right)));
             this.usuarioDataGridView.AutoGenerateColumns = false;
             this.usuarioDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.usuarioDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usuarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.usuarioDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nome,
@@ -172,7 +174,7 @@ namespace UIPrincipal
             this.usuarioDataGridView.Location = new System.Drawing.Point(12, 141);
             this.usuarioDataGridView.Name = "usuarioDataGridView";
             this.usuarioDataGridView.Size = new System.Drawing.Size(776, 421);
-            this.usuarioDataGridView.TabIndex = 5;
+            this.usuarioDataGridView.TabIndex = 3;
             // 
             // Nome
             // 
@@ -216,6 +218,7 @@ namespace UIPrincipal
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Usuário";
+            this.Load += new System.EventHandler(this.FormconsultaUsuário_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormconsultaUsuário_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

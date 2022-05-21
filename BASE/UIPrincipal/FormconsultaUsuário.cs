@@ -10,21 +10,11 @@ namespace UIPrincipal
         public FormconsultaUsuário()
         {
             InitializeComponent();
-        }//---------
+        }
 
         private void buttonSair_Click_1(object sender, EventArgs e)
         {
             Close();
-        }
-
-        
-
-        private void FormconsultaUsuário_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-            {
-                Close();
-            }
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
@@ -33,17 +23,12 @@ namespace UIPrincipal
             usuarioBindingSource.DataSource =  usuarioBLL.Buscar(textBoxBuscar.Text);
         }
 
-        private void textBoxBuscar_TextChanged(object sender, EventArgs e)
+        private void buttonAlterar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void buttonNovo_Click(object sender, EventArgs e)
-        {
-            using (FormCadastroUsuario frm = new FormCadastroUsuario())
+            using (FormCadastroUsuario frm = new FormCadastroUsuario(usuarioBindingSource.Current))
             {
                 frm.ShowDialog();
-            }
+            } 
         }
 
         private void buttonExcluir_Click(object sender, EventArgs e)
@@ -63,5 +48,33 @@ namespace UIPrincipal
             MessageBox.Show("REGISTRO EXCLUIDO COM SUCESSO!");
         }
 
+        /* butões com ação ^-^ */
+        private void buttonNovo_Click(object sender, EventArgs e)
+        {
+            using (FormCadastroUsuario frm = new FormCadastroUsuario())
+            {
+                frm.ShowDialog();
+            }
+            buttonBuscar_Click(null,null);
+        }
+    
+        private void textBoxBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormconsultaUsuário_Load(object sender, EventArgs e)
+        {
+            UsuarioBLL usuarioBLL = new UsuarioBLL();
+            usuarioBindingSource.DataSource = usuarioBLL.Buscar(textBoxBuscar.Text);
+        }
+
+        private void FormconsultaUsuário_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                Close();
+            }
+        }
     }
 }

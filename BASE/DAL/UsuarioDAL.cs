@@ -12,7 +12,7 @@ namespace DAL
             SqlConnection cn = new SqlConnection();
             try
             {
-                cn.ConnectionString = @"User ID=SA;Initial Catalog=LOJA;Data Source=.\SQLEXPRESS2019;Password=Senailab05";
+                cn.ConnectionString = Conexao.StringDEConexao;
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -58,6 +58,8 @@ namespace DAL
 
         }//inserir
 
+        /*------------------------------------------------------------------------------------------------------*/
+
         public DataTable Buscar(string _filtro)
         {
             SqlDataAdapter da = new SqlDataAdapter();
@@ -66,7 +68,7 @@ namespace DAL
 
             try
             {
-                cn.ConnectionString = @"User ID=SA;Initial Catalog=LOJA;Data Source=.\SQLEXPRESS2019;Password=Senailab05";
+                cn.ConnectionString = Conexao.StringDEConexao;
                 SqlCommand cmd = new SqlCommand();
                 da.SelectCommand = cmd;
                 da.SelectCommand.Connection = cn;
@@ -97,19 +99,21 @@ namespace DAL
 
         }//USUÁRIO
 
+        /*------------------------------------------------------------------------------------------------------*/
+
         public Usuario Alterar(Usuario _usuario)
         {
             SqlConnection cn = new SqlConnection();
             
             try
             {
-                cn.ConnectionString = @"User ID=SA;Initial Catalog=LOJA;Data Source=.\SQLEXPRESS2019;Password=Senailab05";
+                cn.ConnectionString = Conexao.StringDEConexao; ;
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "SP_AlterarUsuario";
 
-                SqlParameter pid = new SqlParameter("@ID",SqlDbType.Int);
+                SqlParameter pid = new SqlParameter("@id", SqlDbType.Int);
                 pid.Value = _usuario.Id;
                 cmd.Parameters.Add(pid);
 
@@ -125,6 +129,8 @@ namespace DAL
                 pativo.Value = _usuario.Ativo;
                 cmd.Parameters.Add(pativo);
 
+                cn.Open();
+                cmd.ExecuteNonQuery();
 
                 return _usuario;
 
@@ -144,13 +150,13 @@ namespace DAL
                 cn.Close(); 
             }
         }//alterar
-
+        /*------------------------------------------------------------------------------------------------------*/
         public void Excluir(int _ID)
         {
             SqlConnection cn = new SqlConnection();
             try
             {
-                cn.ConnectionString = @"User ID=SA;Initial Catalog=LOJA;Data Source=.\SQLEXPRESS2019;Password=Senailab05";
+                cn.ConnectionString = Conexao.StringDEConexao;
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;

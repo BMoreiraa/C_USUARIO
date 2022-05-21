@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Banco.cs" />
     <Compile Include="ComandoSql.cs" />
+    <Compile Include="Conexao.cs" />
     <Compile Include="ParametosSql.cs" />
     <Compile Include="UsuarioDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
