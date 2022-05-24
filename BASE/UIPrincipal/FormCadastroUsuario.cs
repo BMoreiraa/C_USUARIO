@@ -7,14 +7,14 @@ namespace UIPrincipal
 {
     public partial class FormCadastroUsuario : Form
     {
+        private bool inserindoNovo;
+
         public FormCadastroUsuario()
         {
             InitializeComponent();
             usuarioBindingSource.AddNew();
             inserindoNovo = true;
         }
-
-        private bool inserindoNovo;
 
         public FormCadastroUsuario(object _current)
         {
