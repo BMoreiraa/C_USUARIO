@@ -1,25 +1,32 @@
-﻿using MODEL;
-using System.Collections.Generic;
+﻿using DAL;
+using MODEL;
+using System.Data;
 
 namespace BLL
 {
     public class UsuarioBLL
     {
-        public void Inserir()
+        public Usuario Inserir(Usuario _usuario)
         {
+           
+            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            return usuarioDAL.Inserir(_usuario);
+        }
+        public DataTable Buscar(string _filtro)
+        {
+            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            return usuarioDAL.Buscar(_filtro);
 
         }
-        public void Excluir()
+        public Usuario Alterar(Usuario _usuario)
         {
-
+            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            return usuarioDAL.Alterar(_usuario);
         }
-        public void Alterar()
+        public void Excluir(int _ID)
         {
-
-        }
-        public List<Usuario> Buscar()
-        {
-            return new List<Usuario>();
+            UsuarioDAL usuarioDAL = new UsuarioDAL();
+            usuarioDAL.Excluir(_ID);
         }
 
     }//USUARIO_BLL
