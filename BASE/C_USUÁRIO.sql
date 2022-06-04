@@ -21,11 +21,12 @@ GO
 
 
 EXEC SP_InserirUsuario 0, 'TESTE','123',1
+go
 EXEC SP_InserirUsuario 0, 'BRUNO','123456',1
+go
 
-SELECT*FROM USUARIO
 
-USE LOJA
+
 /*-----------------------------------------------------------------------------------*/
 CREATE PROCEDURE SP_InserirUsuario
 	@ID int OUTPUT,
@@ -47,7 +48,7 @@ as
 	GO
 
 	EXEC SP_BuscarUsuario 'B'
-
+go
 /*-----------------------------------------------------------------------------------*/
 
 CREATE PROCEDURE SP_AlterarUsuario
@@ -62,3 +63,5 @@ CREATE PROCEDURE SP_AlterarUsuario
 	Senha = @Senha
 	WHERE ID = @ID
 	GO
+
+	SELECT*FROM USUARIO

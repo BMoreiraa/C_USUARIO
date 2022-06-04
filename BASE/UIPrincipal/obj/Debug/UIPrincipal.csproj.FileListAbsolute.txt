@@ -7,3 +7,12 @@ C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipa
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.csproj.CoreCompileInputs.cache
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.exe
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.pdb
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.csproj.AssemblyReference.cache
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.FormCadastroUsuario.resources
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.FormconsultaUsuário.resources
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.FormPrincipal.resources
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.Properties.Resources.resources
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.csproj.GenerateResource.cache
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.csproj.CoreCompileInputs.cache
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.exe
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\UIPrincipal\obj\Debug\UIPrincipal.pdb

@@ -190,7 +190,8 @@ namespace UIPrincipal
             this.Name = "FormCadastroUsuario";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de usuario";
+            this.Text = "B";
+            this.Load += new System.EventHandler(this.FormCadastroUsuario_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormCadastroUsuario_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).EndInit();
             this.ResumeLayout(false);

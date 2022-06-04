@@ -84,7 +84,10 @@ namespace UIPrincipal
             }
         }
 
+        private void FormCadastroUsuario_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }//UIPRINCIPAL 
  //LOCAL PARA ORGANIZAR AS FUNÇÕES DOS BOTÕES

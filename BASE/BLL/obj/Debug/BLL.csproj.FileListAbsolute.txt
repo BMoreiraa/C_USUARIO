@@ -7,3 +7,7 @@ C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.csproj.CoreCom
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.dll
 C:\Users\tecsistem\Desktop\BRUNO\C_USUARIO\BASE\BLL\obj\Debug\BLL.pdb
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\BLL\obj\Debug\BLL.dll
+C:\Users\tecsistem\Desktop\Bruno\Projetos\C_USUARIO\BASE\BLL\obj\Debug\BLL.pdb
